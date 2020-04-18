@@ -20,4 +20,89 @@
       <UniqueIdentifier>{05ca3e0e-542a-4012-88e2-2b9102e3d260}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BOJ\9662_front.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\9662_mid.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\13705_1.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\13705_2.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_1003.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_1615.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_1615_2.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_1904.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_2748.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_3777.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_3777_2.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_9203.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_9416.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_11725.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_11728.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_12781.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BOJ_17614.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\test.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SWEA\Solution1204.java">
+      <Filter>소스 파일\SWEA</Filter>
+    </None>
+    <None Include="SWEA\Solution1240.java">
+      <Filter>소스 파일\SWEA</Filter>
+    </None>
+    <None Include="SWEA\Solution1242.java">
+      <Filter>소스 파일\SWEA</Filter>
+    </None>
+    <None Include="SWEA\Solution1961.java">
+      <Filter>소스 파일\SWEA</Filter>
+    </None>
+    <None Include="SWEA\Solution2046.java">
+      <Filter>소스 파일\SWEA</Filter>
+    </None>
+    <None Include="SWEA\Solution2047.java">
+      <Filter>소스 파일\SWEA</Filter>
+    </None>
+    <None Include="SWEA\Solution2819.java">
+      <Filter>소스 파일\SWEA</Filter>
+    </None>
+    <None Include="SWEA\Solution4613.java">
+      <Filter>소스 파일\SWEA</Filter>
+    </None>
+    <None Include="SWEA\Solution4615.java">
+      <Filter>소스 파일\SWEA</Filter>
+    </None>
+  </ItemGroup>
 </Project>
