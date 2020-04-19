@@ -75,6 +75,9 @@
     <ClCompile Include="BOJ\test.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_1463.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="SWEA\Solution1204.java">
@@ -104,5 +107,10 @@
     <None Include="SWEA\Solution4615.java">
       <Filter>소스 파일\SWEA</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="BOJ\input.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
   </ItemGroup>
 </Project>

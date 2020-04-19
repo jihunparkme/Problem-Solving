@@ -1,38 +1,36 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*
+ * Author: Jihun Park
+ * Date: April 18, 2020
+ * https://www.acmicpc.net/problem/17614
+ */
+ /*
+  * reference : hkim77
+  */
+
 
 #include <cstdio>
 
-int N, cnt;
-int main() {
-	scanf("%d", &N);
-	while (N > 0)
-	{
-		if (!(N % 5)) break;
-		N -= 3;
-		cnt++;
-	}
-	printf("%d", (N < 0) ? -1 : N / 5 + cnt);
-}
-
-#include <iostream>
-#include <string>
-#define init() ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
 using namespace std;
 
-string str;
-int main(void)
+int i;
+
+int func(int n)
 {
-	init();
+	if (n < 2)
+		return 0;
 
-	getline(cin, str);
-	int cnt = 0, len = str.length();
+	int a1 = func(n / 3) + n % 3 + 1;
+	int a2 = func(n / 2) + n % 2 + 1;
 
-	for (int i = 1; i < len; i++)
-	{
-		if (str[i] == 32) cnt++;
-	}
-	if (str[len - 1] == 32) cnt--;
+	return a1 < a2 ? a1 : a2;
+}
+int main()
+{
+	freopen("input.txt", "rt", stdin);
 
-	cout << cnt + 1;
-	return 0;
+	int num;
+
+	scanf("%d", &num);
+
+	printf("%d", func(num));
 }
