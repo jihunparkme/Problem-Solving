@@ -2,27 +2,52 @@
 
 using namespace std;
 
-int n[10];
-char a[100];
+int reverse(int &x)
+{
+    int tmp = 0;
+
+    while (x)
+    {
+        tmp = tmp * 10 + (x % 10);
+        x /= 10;
+    }
+
+    return tmp;
+}
+
+bool isPrime(int &x)
+{
+    if (x == 1)
+        return false;
+
+    for (int i = 2; i < x; i++)
+    {
+        if (x % i == 0)
+            return false;
+    }
+
+    return true;
+}
 
 int main() {
     freopen("input.txt", "rt", stdin);
-    int i, max = 0;
+    int n, num, i, isPrm;
 
-    scanf("%s", &a);
+    scanf("%d", &n);
 
-    for (i = 0; a[i] != '\0'; i++)
-        n[a[i] - 48]++;
-
-    for (i = 1; i < 10; i++)
+    for (i = 0; i < n; i++)
     {
-        if (n[max] < n[i])
-            max = i;
-        else if (n[max] == n[i])
-            max = max > i ? max : i;
+        scanf("%d", &num);
+
+        num = reverse(num);
+
+        isPrm = isPrime(num);
+
+        if (isPrm)
+            printf("%d ", num);
     }
 
-    printf("%d\n", max);
+    puts("");
 
     return 0;
 }

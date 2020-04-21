@@ -87,6 +87,24 @@
     <ClCompile Include="Q14.cpp">
       <Filter>소스 파일\Inflearn</Filter>
     </ClCompile>
+    <ClCompile Include="Q15.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q16.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q17.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q18.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q19.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="SWEA\Solution1204.java">
