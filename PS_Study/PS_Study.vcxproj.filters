@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\SWEA">
       <UniqueIdentifier>{05ca3e0e-542a-4012-88e2-2b9102e3d260}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Inflearn">
+      <UniqueIdentifier>{ab3f6fc2-a7fd-4305-a11b-e60b6dacdf41}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ\9662_front.cpp">
@@ -75,8 +78,14 @@
     <ClCompile Include="BOJ\test.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_1463.cpp">
+    <ClCompile Include="BOJ\BOJ_1463.cpp">
       <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="AA.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="Q14.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -109,7 +118,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="BOJ\input.txt">
+    <Text Include="input.txt">
       <Filter>리소스 파일</Filter>
     </Text>
   </ItemGroup>
