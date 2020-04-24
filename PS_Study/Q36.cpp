@@ -8,25 +8,26 @@ int main(void)
 {
 	freopen("input.txt", "rt", stdin);
 
-	int n, i, j, tmp;
+	int n, i, j, key;
 
 	scanf("%d", &n);
 	vector<int> v(n);
 
 	for (i = 0; i < n; i++)
 		scanf("%d", &v[i]);
-	
-	for (i = 0; i < n-1; i++)
+
+	for (i = 1; i < n; i++)
 	{
-		for (j = 0; j < n - i - 1; j++)
+		j = i - 1;
+		key = v[i];
+		
+		while (j >= 0 && v[j] > key)
 		{
-			if (v[j] > 0 && v[j+1] < 0)
-			{
-				tmp = v[j];
-				v[j] = v[j+1];
-				v[j+1] = tmp;
-			}
+			v[j + 1] = v[j];
+			j--;
 		}
+
+		v[j + 1] = key;
 	}
 
 	for (i = 0; i < n; i++)
