@@ -20,7 +20,7 @@
       <UniqueIdentifier>{05ca3e0e-542a-4012-88e2-2b9102e3d260}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\Inflearn">
-      <UniqueIdentifier>{ab3f6fc2-a7fd-4305-a11b-e60b6dacdf41}</UniqueIdentifier>
+      <UniqueIdentifier>{d1a9a086-818f-4c0e-bc24-b27b5931140d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +84,9 @@
     <ClCompile Include="AA.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
+    <ClCompile Include="init.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
     <ClCompile Include="Q14.cpp">
       <Filter>소스 파일\Inflearn</Filter>
     </ClCompile>
@@ -91,9 +94,6 @@
       <Filter>소스 파일\Inflearn</Filter>
     </ClCompile>
     <ClCompile Include="Q16.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="init.cpp">
       <Filter>소스 파일\Inflearn</Filter>
     </ClCompile>
     <ClCompile Include="Q17.cpp">
@@ -169,6 +169,18 @@
       <Filter>소스 파일\Inflearn</Filter>
     </ClCompile>
     <ClCompile Include="Q40.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q41.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q41_2.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q42.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q43.cpp">
       <Filter>소스 파일\Inflearn</Filter>
     </ClCompile>
   </ItemGroup>
