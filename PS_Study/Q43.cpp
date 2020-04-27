@@ -1,32 +1,34 @@
-#include<stdio.h>
-#include<vector>
-#include<algorithm>
+#include <cstdio>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
-int main() {
-	int n, i, key, lt = 0, rt, mid, tmp;
+int main(void)
+{
+	freopen("input.txt", "rt", stdin);
 
-	scanf("%d %d", &n, &key);
-	vector<int> a;
+	int n, m, i, lt = 0, rt, mid, rst = 0;
 
-	for (i = 0; i < n; i++) {
-		scanf("%d", &tmp);
-		a.push_back(tmp);
-	}
+	scanf("%d %d", &n, &m);
+	vector<int> vt(n+1);
+	for (i = 1; i <= n; i++)
+		scanf("%d", &vt[i]);
 
-	sort(a.begin(), a.end());
+	rt = n;
 
-	rt = n - 1;
-	while (lt <= rt) {
+	while (m > 0)
+	{
 		mid = (lt + rt) / 2;
-		if (a[mid] == key) {
-			printf("%d\n", mid + 1);
-			return 0;
-		}
-		else if (a[mid] > key) rt = mid - 1;
-		else lt = mid + 1;
+		lt = mid + 1;
+
+		m--;
 	}
+
+	for (i = lt-1; i <= rt; i++)
+		rst += vt[i];
+	
+	printf("%d\n", rst);
 
 	return 0;
 }
