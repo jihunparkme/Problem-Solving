@@ -204,6 +204,15 @@
     <ClCompile Include="Q48.cpp">
       <Filter>소스 파일\Inflearn</Filter>
     </ClCompile>
+    <ClCompile Include="Q49.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q50.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q51.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="SWEA\Solution1204.java">
