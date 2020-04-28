@@ -5,36 +5,33 @@
 using namespace std;
 
 int W, H, sW, sH;
-int map[51][51];
-int dp[51][51];
+int dp[701][701];
 
 int main(void)
 {
 	freopen("input.txt", "rt", stdin);
 
-	int  i, j, k, h, sum, rst = -21470000;
+	int  i, j, tmp, sum, rst = -2147000000;
 
-	scanf("%d %d", &W, &H);
-	for (i = 1; i <= W; i++)
-	{
-		for (j = 1; j <= H; j++)
-			scanf("%d", &map[i][j]);
-	}
-	scanf("%d %d", &sW, &sH);
+	scanf("%d %d", &H, &W);
 
-	for (i = 1; i <= W - sW + 1; i++)
+	for (i = 1; i <= H; i++)
 	{
-		for (j = 1; j <= H - sH + 1; j++)
+		for (j = 1; j <= W; j++)
 		{
-			sum = 0;
+			scanf("%d", &tmp);
 
-			for (k = i; k < i + sW; k++)
-			{
-				for (h = j; h < j + sH; h++)
-				{
-					sum += map[k][h];
-				}
-			}
+			dp[i][j] = dp[i][j - 1] + dp[i - 1][j] - dp[i - 1][j - 1] + tmp;
+		}
+	}
+
+	scanf("%d %d", &sH, &sW);
+
+	for (i = sH; i <= H; i++)
+	{
+		for (j = sW; j <= W; j++)
+		{
+			sum = dp[i][j] - dp[i - sH][j] - dp[i][j - sW] + dp[i - sH][j - sW];
 
 			if (sum > rst)
 				rst = sum;
