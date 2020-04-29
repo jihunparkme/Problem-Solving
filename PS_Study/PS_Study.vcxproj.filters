@@ -213,6 +213,18 @@
     <ClCompile Include="Q51.cpp">
       <Filter>소스 파일\Inflearn</Filter>
     </ClCompile>
+    <ClCompile Include="Q52.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q53.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q53_2.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q54.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="SWEA\Solution1204.java">
