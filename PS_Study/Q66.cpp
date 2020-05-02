@@ -1,10 +1,11 @@
-﻿#include <cstdio>
+#include <cstdio>
 #include <vector>
 #include <algorithm>
 
 using namespace std;
 
-int n, m, map[21][21], ch[21], cnt = 0;
+int n, m, ch[21], cnt = 0;
+vector<int> map[21];
 
 void DFS(int v)
 {
@@ -14,13 +15,13 @@ void DFS(int v)
 		cnt++;
 	else
 	{
-		for (i = 1; i <= n; i++)
+		for (i = 0; i < map[v].size(); i++)
 		{
-			if (map[v][i] == 1 && ch[i] == 0)
+			if (ch[map[v][i]] == 0)
 			{
-				ch[i] = 1;
-				DFS(i);
-				ch[i] = 0;
+				ch[map[v][i]] = 1;
+				DFS(map[v][i]);
+				ch[map[v][i]] = 0;
 			}
 		}
 	}
@@ -38,7 +39,7 @@ int main(void)
 	{
 		scanf("%d %d", &s, &e);
 
-		map[s][e] = 1;
+		map[s].push_back(e);
 	}
 
 	ch[1] = 1;
