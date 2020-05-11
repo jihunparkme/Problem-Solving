@@ -14,7 +14,7 @@ void DFS(int L, int s) {
 			int y1 = hs[i].second;
 			dis = 2147000000;
 			for (int j = 0; j < m; j++) {
-				int x2 = pz[ch[j]].first;
+				int x2 = pz[ch[j]].first; 
 				int y2 = pz[ch[j]].second;
 				dis = min(dis, abs(x1 - x2) + abs(y1 - y2));
 			}

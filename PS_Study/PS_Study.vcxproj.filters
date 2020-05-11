@@ -327,6 +327,18 @@
     <ClCompile Include="Q86_teach.cpp">
       <Filter>소스 파일\Inflearn</Filter>
     </ClCompile>
+    <ClCompile Include="Q87.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q88.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q88_teach.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Q89.cpp">
+      <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="SWEA\Solution1204.java">

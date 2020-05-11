@@ -8,33 +8,31 @@ using namespace std;
 #define MAX 2147000000
 #define MIN -2147000000
 
-int n, m, sum = 0, ch[13];
+int n, m, sum = 0, dist, ch[13];
 int rst = MAX;
 vector<pair<int, int> > house, pizza;
 
 void DFS(int s, int L)
 {
-	int i, j, htp, htpMin, htpTotalMin = 0;
+	int i, j, tmp, sum = 0;
 
 	if (L == m)
 	{
 		for (i = 0; i < house.size(); i++)
 		{
-			htpMin = MAX;
+			dist = MAX;
 
 			for (j = 0; j < m; j++)
 			{
-				htp = abs(house[i].x - pizza[ch[j]].x) + abs(house[i].y - pizza[ch[j]].y);
+				tmp = abs(house[i].x - pizza[ch[j]].x) + abs(house[i].y - pizza[ch[j]].y);
 
-				if (htpMin > htp)
-					htpMin = htp;
+				if (dist > tmp) dist = tmp;
 			}
 
-			htpTotalMin += htpMin;
+			sum += dist;
 		}
 
-		if (rst > htpTotalMin)
-			rst = htpTotalMin;
+		if (rst > sum) rst = sum;
 	}
 	else
 	{
