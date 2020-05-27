@@ -16,8 +16,7 @@ int DFS(int x, int y)
 
 	for (int i = 0; i < 4; i++)
 	{
-		int xx = x + dx[i];
-		int yy = y + dy[i];
+		int xx = x + dx[i], yy = y + dy[i];
 
 		if (xx < 0 || xx >= N || yy < 0 || yy >= 10) continue;
 		if (ck[xx][yy] || map[xx][yy] != map[x][y]) continue;
@@ -28,21 +27,21 @@ int DFS(int x, int y)
 	return cnt;
 }
 
-void DFSZ(int x, int y, int colr)
+void DFSZ(int x, int y)
 {
 	ck2[x][y] = true;
-	map[x][y] = 0;
 
 	for (int i = 0; i < 4; i++)
 	{
-		int xx = x + dx[i];
-		int yy = y + dy[i];
+		int xx = x + dx[i], yy = y + dy[i];
 
 		if (xx < 0 || xx >= N || yy < 0 || yy >= 10) continue;
-		if (ck2[xx][yy] || map[xx][yy] != colr) continue;
+		if (ck2[xx][yy] || map[xx][yy] != map[x][y]) continue;
 
-		DFSZ(xx, yy, colr);
+		DFSZ(xx, yy);
 	}
+
+	map[x][y] = 0;
 }
 
 void Down()
@@ -71,7 +70,7 @@ int main(void)
 {
 	int i, j;
 	bool changed;
-	//freopen("input.txt", "rt", stdin);
+	freopen("input.txt", "rt", stdin);
 	scanf("%d %d", &N, &K);
 	for (i = 0; i < N; i++)
 		for (j = 0; j < 10; j++)
@@ -93,7 +92,7 @@ int main(void)
 				if (cnt >= K)
 				{
 					changed = true;
-					DFSZ(i, j, map[i][j]);	// Delete
+					DFSZ(i, j);	// Delete
 				}
 			}
 		}
