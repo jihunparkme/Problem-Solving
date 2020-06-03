@@ -84,9 +84,6 @@
     <ClCompile Include="AA.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="init.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
     <ClCompile Include="Q14.cpp">
       <Filter>소스 파일\Inflearn</Filter>
     </ClCompile>
@@ -422,6 +419,21 @@
     </ClCompile>
     <ClCompile Include="Q104.cpp">
       <Filter>소스 파일\Inflearn</Filter>
+    </ClCompile>
+    <ClCompile Include="2609.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="1934.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="1978.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="1_init.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="1929.cpp">
+      <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
