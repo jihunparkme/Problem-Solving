@@ -141,6 +141,7 @@
     <Text Include="input.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="2167.cpp" />
     <ClCompile Include="BOJ\1003.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
