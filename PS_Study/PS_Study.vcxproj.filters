@@ -14,20 +14,88 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="소스 파일\BOJ">
-      <UniqueIdentifier>{f52bff1f-c7b3-467e-8cc4-2e51bfe0fc4c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\SWEA">
-      <UniqueIdentifier>{05ca3e0e-542a-4012-88e2-2b9102e3d260}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\Inflearn">
-      <UniqueIdentifier>{d1a9a086-818f-4c0e-bc24-b27b5931140d}</UniqueIdentifier>
+      <UniqueIdentifier>{a5f7c486-1c78-4b61-82ab-1a07323be3ef}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <Text Include="input.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BOJ\1_init.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1003.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1012.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1074.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1463.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1615.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1615_2.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1904.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1929.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1932.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1934.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1978.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\2048.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\2609.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\2748.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\3777.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\3777_2.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\9037.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\9203.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\9416.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
     <ClCompile Include="BOJ\9662_front.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
     <ClCompile Include="BOJ\9662_mid.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\11725.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\11728.cpp">
+      <Filter>소스 파일\BOJ</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\12781.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
     <ClCompile Include="BOJ\13705_1.cpp">
@@ -36,441 +104,32 @@
     <ClCompile Include="BOJ\13705_2.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ\BOJ_1003.cpp">
+    <ClCompile Include="BOJ\14620.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ\BOJ_1615.cpp">
+    <ClCompile Include="BOJ\16675.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ\BOJ_1615_2.cpp">
+    <ClCompile Include="BOJ\16768.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ\BOJ_1904.cpp">
+    <ClCompile Include="BOJ\16769.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ\BOJ_2748.cpp">
+    <ClCompile Include="BOJ\16956.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ\BOJ_3777.cpp">
+    <ClCompile Include="BOJ\17224.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ\BOJ_3777_2.cpp">
+    <ClCompile Include="BOJ\17389.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ\BOJ_9203.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ\BOJ_9416.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ\BOJ_11725.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ\BOJ_11728.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ\BOJ_12781.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ\BOJ_17614.cpp">
+    <ClCompile Include="BOJ\17614.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
     <ClCompile Include="BOJ\test.cpp">
       <Filter>소스 파일\BOJ</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ\BOJ_1463.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="AA.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="Q14.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q15.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q16.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q17.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q18.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q19.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q20.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q21.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q22.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q23.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q24.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q25.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q26.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q27.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q28.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q29.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q30.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q31.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q32.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q33.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q34.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q35.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q36.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q37.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q38.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q38_2.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q39.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q40.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q41.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q41_2.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q42.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q43.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q43_2.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q44.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q45.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q45_2.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q46.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q47.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q48.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q49.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q50.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q51.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q52.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q53.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q53_2.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q54.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q55.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q56.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q57.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q58.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q59.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q60.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q61.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q62.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q63.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q64.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q65.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q66.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q67.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q68.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q69.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q70.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q71.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q72.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q73.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q74.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q75.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q76.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q77.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q79.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q78.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q80.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q81.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q82.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q83.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q84.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q85.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q86_0.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q86.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q86_teach.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q87.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q88.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q88_teach.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q89.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q90.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="map_test.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="17224.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="17389.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="9037.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="16769.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="1074.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="16675.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="16956.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="14620.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="1012.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="16768.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="Q91.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q92.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="2048.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="Q93.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q94.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q95.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q96.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q97.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q98.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q98(2).cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q99.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q100.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q101.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q102.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q103.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="Q104.cpp">
-      <Filter>소스 파일\Inflearn</Filter>
-    </ClCompile>
-    <ClCompile Include="2609.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="1934.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="1978.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="1_init.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="1929.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="1932.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="SWEA\Solution1204.java">
-      <Filter>소스 파일\SWEA</Filter>
-    </None>
-    <None Include="SWEA\Solution1240.java">
-      <Filter>소스 파일\SWEA</Filter>
-    </None>
-    <None Include="SWEA\Solution1242.java">
-      <Filter>소스 파일\SWEA</Filter>
-    </None>
-    <None Include="SWEA\Solution1961.java">
-      <Filter>소스 파일\SWEA</Filter>
-    </None>
-    <None Include="SWEA\Solution2046.java">
-      <Filter>소스 파일\SWEA</Filter>
-    </None>
-    <None Include="SWEA\Solution2047.java">
-      <Filter>소스 파일\SWEA</Filter>
-    </None>
-    <None Include="SWEA\Solution2819.java">
-      <Filter>소스 파일\SWEA</Filter>
-    </None>
-    <None Include="SWEA\Solution4613.java">
-      <Filter>소스 파일\SWEA</Filter>
-    </None>
-    <None Include="SWEA\Solution4615.java">
-      <Filter>소스 파일\SWEA</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="input.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
   </ItemGroup>
 </Project>
