@@ -12,7 +12,6 @@ def solve():
         for j in range(1, N+2-i):   # 시작점
             DP[j][j+i-1] = min([DP[j][j+k] + DP[j+k+1][j+i-1] for k in range(i-1)]) + \
                            (S[j+i-1] - S[j-1])
-            print([[j, j + k, j + k + 1, j + i - 1] for k in range(i - 1)])
 
     print(DP[1][N])
 

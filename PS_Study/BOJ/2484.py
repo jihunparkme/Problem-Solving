@@ -1,9 +1,8 @@
 def check():
     for idx in range(3):
-        if lst[idx] == lst[idx+1]:
+        if lst[idx] == lst[idx + 1]:
             return idx
 
-    return -1
 
 mmax, cost = -1, 0
 

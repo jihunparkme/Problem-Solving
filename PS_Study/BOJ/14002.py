@@ -17,7 +17,7 @@ while max_idx != rev[max_idx]:
     tmp.append(A[max_idx])
     max_idx = rev[max_idx]
 tmp.append(A[max_idx]), tmp.reverse()
-
+    
 print(max(DP))
 for i in tmp:
     print(i, end=' ')
