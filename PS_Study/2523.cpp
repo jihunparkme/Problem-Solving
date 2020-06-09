@@ -12,6 +12,6 @@ int main(void)
 		puts("");
 		if (i >= n) m *= -1;
 	}
-		
+	
 	return 0;
 }
