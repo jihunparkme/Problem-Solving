@@ -32,7 +32,6 @@ void solve()
 int main(void)
 {
 	int tc;
-	//freopen("input.txt", "rt", stdin);
 	scanf("%d", &tc);
 
 	while (tc--)
