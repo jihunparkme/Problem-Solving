@@ -28,15 +28,11 @@ int main(void)
 		}
 
 		DP[1][i] = tmp + 1;
+		if (DP[0][i] + DP[1][i] - 1 > res)
+			res = DP[0][i] + DP[1][i] - 1;
 	}
 
-	for (i = 1; i <= n; i++) {
-		int sum = DP[0][i] + DP[1][i];
-		if (sum > res) 
-			res = sum;
-	}
-
-	printf("%d\n", res - 1);
+	printf("%d\n", res);
 
 	return 0;
 }
