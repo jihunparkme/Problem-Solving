@@ -7,6 +7,7 @@ using namespace std;
 #define s second
 #define MAX 2147000000
 #define MIN -2147000000
+int max(int p, int q) { return p > q ? p : q; }
 
 int main(void)
 {
