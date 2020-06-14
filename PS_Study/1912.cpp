@@ -1,29 +1,30 @@
 #include <cstdio>
-#include <vector>
-#include <queue>
 #include <algorithm>
 using namespace std;
-#define f first
-#define s second
-#define MAX 2147000000
-#define MIN -2147000000
-
-int A[100001], DP[100001];
 
 int main(void)
 {
-	int n, i;
-	freopen("input.txt", "rt", stdin);
+	int prev = 0, res = 0, dp = 0;
+	int n, i, a;
+	//freopen("input.txt", "rt", stdin);
 	scanf("%d", &n);
 	for (i = 1; i <= n; i++) {
-		scanf("%d", A[i]);
+		scanf("%d", &a);
+		if (i == 1) res = a;
 
-		if (DP[i - 1] + A[i] > DP[i - 1])
-			DP[i] = DP[i - 1] + A[i];
-		else 
-			DP[i] = 0;
+		if (prev + a > a) {
+			dp = prev + a;
+			prev = dp;
+		}
+		else {
+			dp = a;
+			prev = a;
+		}
+		
+		if (dp > res)
+			res = dp;
 	}
 
-	printf("");
+	printf("%d\n", res);
 	return 0;
 }
