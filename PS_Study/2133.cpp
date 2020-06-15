@@ -16,6 +16,6 @@ int main(void)
 	}
 
 	printf("%lld\n", DP[n]);
-
+	 
 	return 0;
 }
