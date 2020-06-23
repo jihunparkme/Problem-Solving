@@ -1,43 +1,44 @@
-#include <cstdio>
+#include <iostream>
 #include <vector>
-#include <queue>
+#include <cstring>
 #include <algorithm>
 using namespace std;
-#define x first
-#define y second
-#define MAX 2147000000
-#define MIN -2147000000
-int max(int p, int q) { return p > q ? p : q; }
 
 struct student
 {
-	char name[11];
+	char name[15];
 	int k;
 	int e;
 	int m;
 };
 
-bool cmp(student& s1, student& s2) 
+bool cmp(const student& s1, const student& s2)
 {
-	if (s1.k != s2.k) return s1.k > s2.k;
-	else if (s1.k == s2.k) return s1.m < s2.m;
+	if (s1.k == s2.k && s1.e == s2.e && s1.m == s2.m) {
+		if (strcmp(s1.name, s2.name) < 0) return true;
+		return false;
+	}
 	else if (s1.k == s2.k && s1.e == s2.e) return s1.m > s2.m;
-	else return s1.name < s2.name;
+	else if (s1.k != s2.k) return s1.k > s2.k;
+	else return s1.e < s2.e;
 }
 
 int main(void)
 {
 	int n, i;
-	freopen("input.txt", "rt", stdin);
-	scanf("%d", &n);
-	vector<student> vp(n);
-	for (i = 0; i < n; i++) 
-		scanf("%s %d %d %d", vp[i].name, &vp[i].k, &vp[i].e, &vp[i].m);
-	
-	sort(vp.begin(), vp.end(), cmp);
+	// freopen("input.txt", "rt", stdin);
+	ios_base::sync_with_stdio(0), cin.tie(NULL);
+	cin >> n;
+	student* st = new student[n];
 
 	for (i = 0; i < n; i++)
-		printf("%s\n", vp[i].name);
+		cin >> st[i].name >> st[i].k >> st[i].e >> st[i].m;
+	
+	sort(st, st + n, cmp);
 
+	for (i = 0; i < n; i++)
+		cout << st[i].name << '\n';
+
+	delete[] st;
 	return 0;
 }
