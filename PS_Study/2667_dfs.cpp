@@ -36,7 +36,6 @@ int main(void)
 				dfs(i, j);
 				th++;
 			}
-
 		}
 	}
 
