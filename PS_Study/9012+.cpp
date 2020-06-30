@@ -13,6 +13,7 @@ int main(void)
 		int cur = 0;
 		for (i = 0; str[i] && cur >= 0; i++) 
 			str[i] == '(' ? cur++ : cur--;
+
 			printf("%s\n", (cur != 0 ? "NO" : "YES"));
 	}
 
