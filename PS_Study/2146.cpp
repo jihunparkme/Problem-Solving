@@ -13,12 +13,13 @@ int dx[] = { 1, 0, -1, 0 }, dy[] = { 0, 1, 0, -1 };
 void dfs(int x, int y)
 {
 	int i;
-	
+
 	map[x][y] = k;
 	for (i = 0; i < 4; i++) {
 		int xx = x + dx[i];
 		int yy = y + dy[i];
 
+		if (map[xx][yy] != 1) continue;
 		if (xx <= 0 || xx > n || yy <= 0 || yy > n) continue;
 		if (map[xx][yy] == 1) {
 			dfs(xx, yy);
@@ -39,7 +40,7 @@ void bfs(int k)
 			}
 		}
 	}
-			
+
 	while (!q.empty()) {
 		pos now = q.front();
 		q.pop();
@@ -66,7 +67,7 @@ void bfs(int k)
 int main(void)
 {
 	int i, j;
-	// freopen("input.txt", "rt", stdin);
+	freopen("input.txt", "rt", stdin);
 	scanf("%d", &n);
 
 	for (i = 1; i <= n; i++)
@@ -79,11 +80,11 @@ int main(void)
 			if (map[i][j] == 1) {
 				dfs(i, j);
 				k++;
-			}	
+			}
 		}
 	}
 
-	for (i = 2; i < k; i++) 
+	for (i = 2; i < k; i++)
 		bfs(i);
 
 	printf("%d\n", ans);
