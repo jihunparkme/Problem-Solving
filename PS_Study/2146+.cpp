@@ -14,7 +14,7 @@ void dfs(int col, int idx) {
         if (!xx || !yy || xx > N || yy > N || ck[xx][yy] || !MP[xx][yy]) continue;
         dfs(col, xx * (N + 1) + yy);
     }
-}
+} 
 
 int main() {
     ios::sync_with_stdio(false); cin.tie();
