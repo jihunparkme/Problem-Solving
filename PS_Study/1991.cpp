@@ -1,4 +1,4 @@
-#include <cstdio>
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <algorithm>
@@ -13,11 +13,14 @@ int map[54];
 
 int main(void)
 {
-	freopen("input.txt", "rt", stdin);
 	int n, i;
-	scanf("%d", &n);
-	for (i = 1; i < n; i++) {
-
+	char root, left, right;
+	freopen("input.txt", "rt", stdin);
+	cin >> n;
+	ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL);
+	for (i = 0; i < n; i++) {
+		cin >> root >> left >> right;
+		
 	}
 
 	return 0;
