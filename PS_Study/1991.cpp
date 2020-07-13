@@ -26,7 +26,6 @@ int main(void)
 	return 0;
 }
 
-
 /*
 #include <iostream>
 using namespace std;
