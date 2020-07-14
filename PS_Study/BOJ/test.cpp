@@ -1,36 +1,63 @@
-/*
- * Author: Jihun Park
- * Date: April 18, 2020
- * https://www.acmicpc.net/problem/17614
- */
- /*
-  * reference : hkim77
-  */
 
-
-#include <cstdio>
-
+#include <iostream>
 using namespace std;
 
-int i;
+int n;
 
-int func(int n)
-{
-	if (n < 2)
-		return 0;
+struct node {
+    char left;
+    char right;
+};
 
-	int a1 = func(n / 3) + n % 3 + 1;
-	int a2 = func(n / 2) + n % 2 + 1;
+struct node arr[100];
 
-	return a1 < a2 ? a1 : a2;
+void preorder(char root) {
+    if (root == '.')
+        return;
+    else {
+        cout << root;
+        preorder(arr[root].left);
+        preorder(arr[root].right);
+    }
 }
-int main()
-{
-	freopen("input.txt", "rt", stdin);
 
-	int num;
+void inorder(char root) {
+    if (root == '.')
+        return;
+    else {
+        inorder(arr[root].left);
+        cout << root;
+        inorder(arr[root].right);
+    }
+}
 
-	scanf("%d", &num);
+void postorder(char root) {
+    if (root == '.')
+        return;
+    else {
+        postorder(arr[root].left);
+        postorder(arr[root].right);
+        cout << root;
+    }
+}
 
-	printf("%d", func(num));
+int main() {
+    std::ios::sync_with_stdio(false);
+    cin >> n;
+
+    char t1, t2, t3;
+
+    for (int i = 1; i <= n; i++) {
+        cin >> t1 >> t2 >> t3;
+        arr[t1].left = t2; arr[t1].right = t3;
+    }
+
+    preorder('A');
+    cout << "\n";
+    inorder('A');
+    cout << "\n";
+    postorder('A');
+    cout << "\n";
+
+    return 0;
 }
