@@ -22,42 +22,4 @@
       <Filter>리소스 파일</Filter>
     </Text>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BOJ\1_init.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ\test.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="9012.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="9012+.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="10799.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="10799+.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="2146.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="2146+.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="10845.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="1991.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="1991(2).cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="1991(3).cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>
