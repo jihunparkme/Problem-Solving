@@ -22,18 +22,4 @@
       <Filter>리소스 파일</Filter>
     </Text>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BOJ\1_init.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ\test.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="1699.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-    <ClCompile Include="2133.cpp">
-      <Filter>소스 파일\BOJ</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>
