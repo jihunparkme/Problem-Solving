@@ -1,21 +1,18 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
-public class Solution4615 {
+import java.util.Scanner;
+
+public class Solution4615_2 {
 	// 시계방향
 	static int dx[] = { -1, -1, 0, 1, 1, 1, 0, -1 };
 	static int dy[] = { 0, 1, 1, 1, 0, -1, -1, -1 };
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
-		int T = Integer.parseInt(br.readLine());
+		Scanner sc = new Scanner(System.in);
+
+		int T = sc.nextInt();
 		for (int tc = 1; tc <= T; tc++) {
-			StringTokenizer st = new StringTokenizer(br.readLine());
-			int N = Integer.parseInt(st.nextToken());
-			int M = Integer.parseInt(st.nextToken()); // 돌을 놓는 횟수
+			int N = sc.nextInt();
+			int M = sc.nextInt(); // 돌을 놓는 횟수
 			int board[][] = new int[N + 1][N + 1];
 			// 초기 세팅
 			board[N / 2][N / 2] = 2;
@@ -23,28 +20,36 @@ public class Solution4615 {
 			board[N / 2 + 1][N / 2] = 1;
 			board[N / 2][N / 2 + 1] = 1;
 
+//			for (int tst = 0; tst <= N; tst++) {
+//				System.out.println(Arrays.toString(board[tst]));
+//			}
+//			System.out.println("\n\n");
+			
 			for (int i = 0; i < M; i++) {
-				StringTokenizer st2 = new StringTokenizer(br.readLine());
-				int x = Integer.parseInt(st2.nextToken());
-				int y = Integer.parseInt(st2.nextToken());
-				int rock = Integer.parseInt(st2.nextToken());
+				int x = sc.nextInt();
+				int y = sc.nextInt();
+				int rock = sc.nextInt();
 
 				board[x][y] = rock;
 				for (int d = 0; d < 8; d++) {
 					int xx = x + dx[d];
 					int yy = y + dy[d];
-					// 해당 방향으로 같은색 돌이 나올 때까지 탐색
+					// 범위를 벗어나거나, 주변이 0 or 같은 돌이면 pass
+					if (xx < 1 || yy < 1 || xx > N || yy > N) continue;
+					if (board[xx][yy] == 0 || board[xx][yy] == rock) continue;
+					// 주변이 다른 돌이면, 그 방향으로 같은 돌이 위치하는지 확인
 					boolean existSame = false;
 					while(true) {
-						if(xx < 1 || yy < 1 || xx > N || yy > N) break;
+						xx += dx[d];
+						yy += dy[d];
+						if(xx > N || yy > N || xx < 1 || yy < 1) break;
 						if(board[xx][yy] == 0) break;
 						if(board[xx][yy] == rock) {
 							existSame = true;
 							break;
 						}
-						xx += dx[d];
-						yy += dy[d];
 					}
+					// 그 방향에 같은 돌이 있다면 사이에 있는 상대돌을 내꺼로
 					while(existSame) {
 						xx -= dx[d];
 						yy -= dy[d];
@@ -52,7 +57,8 @@ public class Solution4615 {
 						
 						if(xx == x && yy == y) break;
 					}
-				}	
+				}
+				
 //				for (int tst = 0; tst <= N; tst++) {
 //					System.out.println(Arrays.toString(board[tst]));
 //				}

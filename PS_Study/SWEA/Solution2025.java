@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
-public class Solution2046 {
-
+public class Solution2025 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
+		int res = 0;
 		
-		for(int i=0; i<n; i++)
-			System.out.print("#");
+		while(n > 0)
+			res += n--;
+		
+		System.out.println(res);
 	}
-
 }

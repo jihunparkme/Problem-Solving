@@ -1,66 +1,126 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class Solution1961 {
-	static int[][] arr;
+	
 	static int N;
 	
-	public static void run() throws Exception {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int tc = Integer.parseInt(br.readLine());
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		for(int T=0; T<tc; T++) {	// Number of test cases
-			N = Integer.parseInt(br.readLine());
-			arr = new int[N][N];	// array
-			
-			// Store a matrix in an array
-			for(int i=0; i<N; i++) {	// Number of N
-				StringTokenizer st = new StringTokenizer(br.readLine());
-				for(int j=0; j<N; j++) {
-					arr[i][j] = Integer.parseInt(st.nextToken());
-				}
-			}
-			
-			int[][] rotation_90 = Rotation(arr);	// 90 degree rotation
-			int[][] rotation_180 = Rotation(rotation_90);	// 180 degree rotation
-			int[][] rotation_270 = Rotation(rotation_180);	// 270 degree rotation
-			
-			System.out.println("#" + (T+1));
+		int T = sc.nextInt();
+		for(int tc=1; tc<=T; tc++) {
+			N = sc.nextInt();
+			int arr[][] = new int[N][N];
+			int arr90[][] = new int[N][N];
+			int arr180[][] = new int[N][N];
+			int arr270[][] = new int[N][N];
+			// Input
 			for(int i=0; i<N; i++) {
 				for(int j=0; j<N; j++) {
-					System.out.print(rotation_90[i][j]);	// 90 degree rotated shape
+					arr[i][j] = sc.nextInt();
 				}
+			}
+			
+			arr90 = rotation90(arr, arr90);
+			arr180 = rotation180(arr, arr180);
+			arr270 = rotation270(arr, arr270);
+			
+			System.out.println("#" + tc);
+			for(int i=0; i<N; i++) {
+				for(int j=0; j<N; j++) 
+					System.out.print(arr90[i][j]);
 				System.out.print(" ");
-				
-				for(int j=0; j<N; j++) {
-					System.out.print(rotation_180[i][j]);	// 180 degree rotated shape
-				}
+				for(int j=0; j<N; j++) 
+					System.out.print(arr180[i][j]);
 				System.out.print(" ");
-				
-				for(int j=0; j<N; j++) {
-					System.out.print(rotation_270[i][j]);	// 270 degree rotated shape
-				}
-				System.out.println("");
+				for(int j=0; j<N; j++) 
+					System.out.print(arr270[i][j]);
+				System.out.println();
 			}
 		}
 	}
 	
-	// 90 degree rotation
-	public static int[][] Rotation(int[][] arr) {
-		int[][] temp_arr = new int[N][N];
-		
+	public static int[][] rotation90(int[][] arr, int[][] res) {
 		for(int i=0; i<N; i++) {
 			for(int j=0; j<N; j++) {
-				temp_arr[i][j] = arr[N-1-j][i];
+				res[j][N-1-i] = arr[i][j];
 			}
 		}
 		
-		return temp_arr;
+		return res;
 	}
 	
-	public static void main(String[] args) throws Exception {
-		Solution1961.run();
+	public static int[][] rotation180(int[][] arr, int[][] res) {
+		for(int i=0; i<N; i++) {
+			for(int j=0; j<N; j++) {
+				res[N-1-i][N-1-j] = arr[i][j];
+			}
+		}
+		
+		return res;
+	}
+	
+	public static int[][] rotation270(int[][] arr, int[][] res) {
+		for(int i=0; i<N; i++) {
+			for(int j=0; j<N; j++) {
+				res[N-1-j][i] = arr[i][j];
+			}
+		}
+		
+		return res;
 	}
 }
+/*
+[90도]
+00 01 02
+10 11 12
+20 21 22
+
+20 10 00
+21 11 01
+22 12 02
+
+00 -> 02
+01 -> 12
+02 -> 22
+
+10 -> 01 
+11 -> 11
+12 -> 21
+*/
+/*
+[180도]
+00 01 02
+10 11 12
+20 21 22
+
+22 21 20
+12 11 10
+02 01 00
+
+00 -> 22
+01 -> 21
+02 -> 20
+
+10 -> 12 
+11 -> 11
+12 -> 10
+*/
+/*
+[270도]
+00 01 02
+10 11 12
+20 21 22
+
+02 12 22
+01 11 21
+00 10 20
+
+00 -> 20
+01 -> 10
+02 -> 00
+
+10 -> 21
+11 -> 11
+12 -> 01
+*/
