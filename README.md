@@ -1,6 +1,6 @@
 # Coding-Practice
 
-Hi :wave:
+Hi ~! :wave:
 
 This is my coding graffiti.:pencil2::wavy_dash:
 
